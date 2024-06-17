@@ -130,8 +130,7 @@
     </th>
   </tr>
 
-  <% @the_director.filmography.each.do |a_movie| %>
-
+  <% @the_director.filmography.each do |a_movie| %>
     <tr>
       <td>
         <%= a_movie.id %>
@@ -154,7 +153,7 @@
       </td>
 
       <td>
-        <a href="/movies/<%= #a_movie.id %>">
+        <a href="/movies/<%= a_movie.id %>">
           Show details
         </a>
       </td>
